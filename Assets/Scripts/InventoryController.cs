@@ -9,20 +9,20 @@ public class InventoryController : MonoBehaviour
     private Transform content;
     [SerializeField]
     private GameObject itemPrefab;
-    private ItemData[] items;
+    private ItemData[] itemsData;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        items = Resources.LoadAll<ItemData>("Itens"); //Vai na pasta Resources, pega tudo que tem e carrega todos os itens
+        itemsData = Resources.LoadAll<ItemData>("Items"); //Vai na pasta Resources, pega tudo que tem e carrega todos os itens
         
-        if(items.Length > 0)
+        if(itemsData.Length > 0)
         {
-            for ( int i = 0; i < items.Length; i++)
+            for ( int i = 0; i < itemsData.Length; i++)
             {
-                Debug.Log(items[i]);
-                CreateUIItem(items[i]);
+                Debug.Log(itemsData[i]);
+                CreateUIItem(itemsData[i]);
             }
         }
     }
