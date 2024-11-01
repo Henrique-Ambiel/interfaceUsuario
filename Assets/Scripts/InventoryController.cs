@@ -9,6 +9,8 @@ public class InventoryController : MonoBehaviour
     private Transform content;
     [SerializeField]
     private GameObject itemPrefab;
+    [SerializeField]
+    private TMP_InputField inputField;
     private ItemData[] itemsData;
 
 
@@ -28,6 +30,19 @@ public class InventoryController : MonoBehaviour
         }
     }
 
+    public void Search()
+    {
+        string value = inputField.text;
+        int index = BinarySearchByName(value);
+        if(index <= 0)
+        {
+            ClearAll();
+            CreateUIItem(itemsData[index]);
+        } else
+        {
+            
+        }
+    } 
 
     //Usa o prefab para exibir as informções na tela 
     private void CreateUIItem(ItemData data)
@@ -40,6 +55,14 @@ public class InventoryController : MonoBehaviour
         priceText.text = data.price.ToString("0.00");
         TextMeshProUGUI descriptionText = uiItem.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
         descriptionText.text = data.description;
+    }
+
+    private void ClearAll()
+    {
+        for (int i = 0; i < content.childCount; i++)
+        {
+            Destroy(content.GetChild(i).gameObject);
+        }
     }
 
     private void BubbleSort()
