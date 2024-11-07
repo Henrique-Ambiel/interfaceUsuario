@@ -19,6 +19,7 @@ public class InventoryController : MonoBehaviour
     {
         itemsData = Resources.LoadAll<ItemData>("Items"); //Vai na pasta Resources, pega tudo que tem e carrega todos os itens
         BubbleSort();
+        ClearAll();
 
         if(itemsData.Length > 0)
         {
@@ -29,20 +30,6 @@ public class InventoryController : MonoBehaviour
             }
         }
     }
-
-    public void Search()
-    {
-        string value = inputField.text;
-        int index = BinarySearchByName(value);
-        if(index <= 0)
-        {
-            ClearAll();
-            CreateUIItem(itemsData[index]);
-        } else
-        {
-            
-        }
-    } 
 
     //Usa o prefab para exibir as informções na tela 
     private void CreateUIItem(ItemData data)
@@ -65,6 +52,7 @@ public class InventoryController : MonoBehaviour
         }
     }
 
+    //Método de organização dos itens
     private void BubbleSort()
     {
         for (int i = itemsData.Length - 1; i > 0; i--)
@@ -85,6 +73,7 @@ public class InventoryController : MonoBehaviour
         }
     }
 
+    //Método de busca binária
     private int BinarySearchByName(string value)
     {
 
@@ -110,5 +99,49 @@ public class InventoryController : MonoBehaviour
         }
 
         return -1;
+    }
+
+    //Método de busca sequencial
+    private List<ItemData> SequencialSearchByName(string value)
+    {
+
+        List<ItemData> result = new List<ItemData>();
+        string upperValue = value.ToUpper();
+
+        for (int i = 0; i < itemsData.Length; i++)
+        {
+            string upperSource = itemsData[i].itemName.ToUpper();
+            if (upperValue[0].CompareTo(upperSource[0]) > 0)
+                continue;
+
+            if (upperValue[0].CompareTo(upperSource[0]) < 0)
+                break;
+
+
+            if (upperSource.Substring(0, upperValue.Length) == upperValue)
+                result.Add(itemsData[i]);
+        }
+
+        return result;
+    }
+
+    //Método de busca sensitiva
+    public void SensitiveSearch(string value)
+    {
+        ClearAll();
+        if(string.IsNullOrEmpty(value))
+        {
+            for (int i = 0; i < itemsData.Length; i++)
+            {
+                CreateUIItem(itemsData[i]);
+            }
+
+            return;
+        }
+
+        List<ItemData> result = SequencialSearchByName(value);
+
+        for (int i = 0; i < result.Count; i++)
+            CreateUIItem(result[i]);
     }
 }

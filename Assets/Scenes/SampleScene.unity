@@ -340,6 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 353342561}
   itemPrefab: {fileID: 7857398989120521663, guid: 0c1e501c5c68176409a68000c59b9dc5, type: 3}
+  inputField: {fileID: 0}
 --- !u!1 &353342560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1432,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 237864033}
+        m_TargetAssemblyTypeName: InventoryController, Assembly-CSharp
+        m_MethodName: SensitiveSearch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
