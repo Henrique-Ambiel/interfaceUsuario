@@ -14,13 +14,18 @@ O projeto aborda os seguintes conceitos de estrutura de dados:
 O inventário desenvolvido inclui itens como espadas, arcos e outras armas, organizados de forma eficiente usando estruturas de dados.
 
 💻 Tecnologias Utilizadas
-Linguagem: C#
-Engine: Unity
-Foco: Estruturas de dados aplicadas ao desenvolvimento de jogos.
+
+- Linguagem: C#
+  
+- Engine: Unity
+  
+- Foco: Estruturas de dados aplicadas ao desenvolvimento de jogos.
 
 📁 Estrutura do Repositório
-/Scripts: Contém os scripts responsáveis pela lógica de manipulação de dados e integração com a interface gráfica.
-/Assets: Inclui os elementos gráficos utilizados para a interface do inventário.
+
+- /Scripts: Contém os scripts responsáveis pela lógica de manipulação de dados e integração com a interface gráfica.
+  
+- /Assets: Inclui os elementos gráficos utilizados para a interface do inventário.
 
 🚀 Como Utilizar
 Faça o clone do repositório:
