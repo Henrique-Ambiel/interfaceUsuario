@@ -5,9 +5,11 @@ Este repositório contém o projeto desenvolvido na disciplina de Estrutura de D
 📋 Conteúdo do Projeto
 O projeto aborda os seguintes conceitos de estrutura de dados:
 
-Lista (List): Manipulação de uma coleção de itens representando o inventário do jogador.
-Busca Binária: Implementação para localizar itens de forma eficiente dentro do inventário.
-Interface Gráfica: Criação de uma interface amigável para o usuário visualizar e interagir com o inventário.
+- Lista (List): Manipulação de uma coleção de itens representando o inventário do jogador.
+  
+- Busca Binária: Implementação para localizar itens de forma eficiente dentro do inventário.
+  
+- Interface Gráfica: Criação de uma interface amigável para o usuário visualizar e interagir com o inventário.
 
 O inventário desenvolvido inclui itens como espadas, arcos e outras armas, organizados de forma eficiente usando estruturas de dados.
 
