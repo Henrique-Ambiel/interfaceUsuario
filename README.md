@@ -29,11 +29,12 @@ O inventário desenvolvido inclui itens como espadas, arcos e outras armas, orga
 
 🚀 Como Utilizar
 Faça o clone do repositório:
-bash
-Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git  
-Abra o projeto no Unity.
-Explore a funcionalidade do inventário, adicionando ou removendo itens conforme necessário.
+
+- git clone https://github.com/Henrique-Ambiel/interfaceUsuario.git
+  
+- Abra o projeto no Unity.
+  
+- Explore a funcionalidade do inventário, adicionando ou removendo itens conforme necessário.
 
 🎯 Objetivo
 Este repositório foi criado para fins acadêmicos, visando consolidar o aprendizado sobre estruturas de dados e sua aplicação prática no desenvolvimento de jogos digitais.
