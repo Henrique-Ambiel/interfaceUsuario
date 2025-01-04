@@ -1,8 +1,8 @@
-Projeto de Estrutura de Dados - Inventário em Unity 🎮📋
+# Projeto de Estrutura de Dados - Inventário em Unity 🎮📋
 
 Este repositório contém o projeto desenvolvido na disciplina de Estrutura de Dados do curso de Jogos Digitais. O objetivo foi aplicar conceitos fundamentais de estruturas de dados em uma solução prática dentro do contexto de jogos, utilizando C# na Unity.
 
-📋 Conteúdo do Projeto
+## 📋 Conteúdo do Projeto
 O projeto aborda os seguintes conceitos de estrutura de dados:
 
 - Lista (List): Manipulação de uma coleção de itens representando o inventário do jogador.
@@ -13,7 +13,7 @@ O projeto aborda os seguintes conceitos de estrutura de dados:
 
 O inventário desenvolvido inclui itens como espadas, arcos e outras armas, organizados de forma eficiente usando estruturas de dados.
 
-💻 Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
 - Linguagem: C#
   
@@ -21,13 +21,13 @@ O inventário desenvolvido inclui itens como espadas, arcos e outras armas, orga
   
 - Foco: Estruturas de dados aplicadas ao desenvolvimento de jogos.
 
-📁 Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
 - /Scripts: Contém os scripts responsáveis pela lógica de manipulação de dados e integração com a interface gráfica.
   
 - /Assets: Inclui os elementos gráficos utilizados para a interface do inventário.
 
-🚀 Como Utilizar
+## 🚀 Como Utilizar
 Faça o clone do repositório:
 
 - git clone https://github.com/Henrique-Ambiel/interfaceUsuario.git
