@@ -36,6 +36,6 @@ Faça o clone do repositório:
   
 - Explore a funcionalidade do inventário, adicionando ou removendo itens conforme necessário.
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Este repositório foi criado para fins acadêmicos, visando consolidar o aprendizado sobre estruturas de dados e sua aplicação prática no desenvolvimento de jogos digitais.
